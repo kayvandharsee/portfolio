@@ -25,6 +25,8 @@ section{
     scroll-snap-align: center;
 }
 
+
+// changed it from 738px to include ipad mini as mobile since formatting works better (still not the best for ipad mini)
 @mixin mobile {
     @media (max-width: 738px) {
         @content;

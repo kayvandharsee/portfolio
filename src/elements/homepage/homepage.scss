@@ -4,126 +4,125 @@
     height: calc(100vh - 100px);
     overflow: hidden;
     background: linear-gradient(180deg, #ffffe4, #ecd9ba);
-    position: relative;
 
-    .text{
-        max-width: 1024px;
-        height: 80%;
-        margin: auto;
+    .container{
+        height: calc(100vh - 200px);
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 30px;
-
-        @include mobile{
-            width: 100%;
-            height: 45%;
-            gap: 10px;
-            align-items: center;
-            text-align: center;
-        }
-
-        @include tablet{
-            width: 100%;
-            height: 45%;
-            gap: 10px;
-            align-items: center;
-            text-align: center;
-            position: relative;
-            bottom: 50px
-        }
-
-        h2{
-            font-size: 20px;
-            letter-spacing: 4px;
-            width: 50%;
-
-            @include mobile{
-                font-size: 15px;
-                letter-spacing: 2px;
-                width: 100%;
-            }
-
-            @include tablet{
-                width: 100%;
-            }
-        }
-        h1{
-            font-size: 50px;
-            letter-spacing: 5px;
-            color: #a07855;
-            width: 50%;
-            line-height: 70px;
-            font-weight: 800;
-
-            @include mobile{
-                font-size: 40px;
-                letter-spacing: 3px;
-            }
-        }
-    }
-
-    .image{
-        display: flex;
-        height: 80%;
-        position: absolute;
-        top: 0;
-        right: 200px;
-        justify-content: center;
         align-items: center;
-        z-index: 3;
+        justify-content: center;
+        overflow: hidden;
 
         @include mobile{
-         height: 50%;
-         width: 100%; 
-         top: unset;  
-         bottom: 20px;
-         right: unset;
+            flex-direction: column;
         }
 
         @include tablet{
-            height: 30%;
-            width: 100%; 
-            top: unset;  
-            bottom: 150px;
-            right: unset;
-           }
+            flex-direction: column;
+        }
 
-        .blob{
-            background: url(http://kayvandharsee.github.io/portfolio/kayvan.png);
-            -webkit-background-size: cover;
-            background-size: cover;
-            background-position: center center;
-            height: 450px;
-            width: 450px;
-            box-shadow: 0 0px 20px 20px rgba(222,193,155,1);
-            animation: blob 5s ease-in-out infinite;
-            transition: all 1s ease-in-out;
+        .text{
+            flex: 0.57;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
 
             @include mobile{
-                height: 300px;
-                width: 300px;
+                width: 100%;
+                height: 45%;
+                gap: 10px;
+                align-items: center;
+                text-align: center;
+                padding: 20px;
             }
 
             @include tablet{
-                height: 120%;
-                width: 70%;
+                width: 100%;
+                height: 45%;
+                gap: 10px;
+                align-items: center;
+                text-align: center;
+                position: relative;
+                bottom: 50px;
+            }
+
+            h2{
+                font-size: 20px;
+                letter-spacing: 4px;
+                width: 100%;
+
+                @include mobile{
+                    font-size: 15px;
+                    letter-spacing: 2px;
+                    width: 100%;
+                }
+
+                @include tablet{
+                    font-size: 15px;
+                    width: 100%;
+                }
+            }
+            h1{
+                font-size: 50px;
+                letter-spacing: 5px;
+                color: #a07855;
+                width: 50%;
+                line-height: 70px;
+                font-weight: 800;
+
+                @include mobile{
+                    font-size: 40px;
+                    letter-spacing: 3px;
+                }
+
+                @include tablet{
+                    font-size: 40px;
+                    letter-spacing: 3px;
+                }
             }
         }
-    }
 
-    .sliding-text{
-        position: absolute;
-        font-size: 30vh;
-        bottom: -20px;
-        white-space: nowrap;
-        color: #a0785517;
-        letter-spacing: 15px;
-        width: 50%;
-        font-weight: bold;
+        .image{
+            position: relative;
 
-        @include mobile{
-            display: none;
+            @include mobile{
+                display: none;
+            }
+
+            .blob{
+                background: url(http://kayvandharsee.github.io/portfolio/kayvan.png);
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+                height: 450px;
+                width: 450px;
+                box-shadow: 0 0px 20px 20px rgba(222,193,155,1);
+                animation: blob 5s ease-in-out infinite;
+                transition: all 1s ease-in-out;
+
+                @include tablet{
+                    height: 300px;
+                    width: 300px;
+                }
+            }
+        }
+
+        .sliding-text{
+            position: absolute;
+            font-size: 30vh;
+            bottom: -20px;
+            white-space: nowrap;
+            color: #a0785517;
+            letter-spacing: 15px;
+            width: 50%;
+            font-weight: bold;
+
+            @include mobile{
+                display: none;
+            }
+
+            @include tablet{
+                display: none;
+            }
         }
     }
 }

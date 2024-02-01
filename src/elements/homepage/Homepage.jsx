@@ -53,6 +53,7 @@ const blobVariants = {
 const Homepage = () => {
   return (
     <div className='homepage'>
+      <div className="container">
         <motion.div className='text' variants={textVariants} initial='initial' whileInView='animate'>
           <motion.h2 variants={textVariants}>
             HI THERE! I'M
@@ -64,12 +65,13 @@ const Homepage = () => {
             I'M A MCGILL STUDENT BASED IN TORONTO, ONTARIO
           </motion.h2>
         </motion.div>
-      <motion.div className="sliding-text" variants={sliderVariants} initial='initial' animate='animate'>
-        &nbsp;&nbsp;I CODE, I LIFT, I COOK&nbsp;&nbsp;
-      </motion.div>
-      <motion.div className='image' variants={blobVariants} initial='initial' whileInView='animate'>
-          <div className='blob'></div>
-      </motion.div>
+        <motion.div className="sliding-text" variants={sliderVariants} initial='initial' animate='animate'>
+          &nbsp;&nbsp;I CODE, I LIFT, I COOK&nbsp;&nbsp;
+        </motion.div>
+        <motion.div className='image' variants={blobVariants} initial='initial' whileInView='animate'>
+            <div className='blob'></div>
+        </motion.div>
+      </div>
     </div>
   )
 }

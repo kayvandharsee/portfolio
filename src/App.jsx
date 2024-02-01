@@ -14,10 +14,12 @@ const App = () => {
         <Navbar />
         <Homepage />
       </section>
-      <section id="Portfolio">
+      <section id="Skills">
         <Skills />
       </section>
-      <Portfolio />
+      <div id="Portfolio">
+        <Portfolio />
+      </div>
       <section id="Contact">
         <Contact />
       </section>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const sections = ['Homepage', 'Portfolio', 'Contact']
+const sections = ['Homepage', 'Skills', 'Portfolio', 'Contact']
 const variants = {
   open: {
     transition: {staggerChildren: 0.1}
