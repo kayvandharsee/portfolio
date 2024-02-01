@@ -54,13 +54,13 @@ const Skills = () => {
             </motion.h1>
             <br /><br />
             <motion.div className="images" variants={imageVariants} initial='initial' whileInView='animate'>
-                <motion.img src="/python.png" alt="Python logo" variants={imageVariants} />
-                <motion.img src="/java.png" alt="Java logo" variants={imageVariants} />
-                <motion.img src="/c.png" alt="C logo" variants={imageVariants} />
+                <motion.img src="python.png" alt="Python logo" variants={imageVariants} />
+                <motion.img src="java.png" alt="Java logo" variants={imageVariants} />
+                <motion.img src="c.png" alt="C logo" variants={imageVariants} />
                 <motion.img src="javascript.svg" alt="JavaScript logo" variants={imageVariants}/>
-                <motion.img src="/react.png" alt="React logo" variants={imageVariants} />
-                <motion.img src="/html2.png" alt="HTML logo" variants={imageVariants} />
-                <motion.img src="/css.png" alt="CSS logo" variants={imageVariants} />
+                <motion.img src="react.png" alt="React logo" variants={imageVariants} />
+                <motion.img src="html2.png" alt="HTML logo" variants={imageVariants} />
+                <motion.img src="css.png" alt="CSS logo" variants={imageVariants} />
             </motion.div>
         </div>
         <motion.div className="box-wrapper">
