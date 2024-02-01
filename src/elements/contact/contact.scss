@@ -1,0 +1,114 @@
+@import '../../app.scss';
+
+.contact{
+    background: linear-gradient(180deg, #ffffe4, #ecd9ba);
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 14.55%;
+    overflow: hidden;
+
+    @include mobile{
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .text-container{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @include mobile{
+            gap: 20px;
+            text-align: center;
+            align-items: center;
+            margin-top: 70px;
+        }
+
+        h1{
+            font-size: 60px;
+            color: black;
+            width: 50%;
+            font-weight: 800;
+
+            @include mobile{
+                font-size: 30px;
+                width: 100%;
+            }
+        }
+    }
+
+    .form-container{
+        flex: 1;
+        position: relative;
+        width: auto;
+
+        @include mobile{
+            padding: 50px;
+            width: 100%;
+        }
+
+        .svg{
+            stroke: #a07855;
+            position: absolute;
+            margin: auto;
+
+            @include tablet{
+                left: -70px;
+            }
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+            z-index: 1;
+
+            @include mobile{
+                gap: 10px;
+            }
+        
+            input, textarea{
+                padding: 10px;
+                background-color: transparent;
+                border: 1px solid #a07855;
+                border-radius: 10px;
+
+                @include mobile{
+                    padding: 5px;
+                }
+            }
+
+            .button-enabled{
+                padding: 20px;
+                border: none;
+                background-color: #a07855;
+                border-radius: 10px;
+                font-size: 13px;
+                cursor: pointer;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+
+                &:hover{
+                    animation: shake 0.7s ease-in-out both;
+                }
+            }
+            
+            .button-disabled{
+                padding: 20px;
+                border: none;
+                background-color: #a0785550;
+                border-radius: 10px;
+                font-size: 13px;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,150 @@
+@import '../../app.scss';
+
+.portfolio{
+    position: relative;
+    background: linear-gradient(180deg, #ffffe4, #ecd9ba 50%, #ecd9ba, #ffffe4 100%);
+
+    .progress{
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        text-align: center;
+
+        @include mobile{
+            padding-top: calc(100vh - 60px);
+            z-index: 1;
+        }
+
+        @include tablet{
+            z-index: 1;
+        }
+
+        h1{
+            color: black;
+            font-size: 50px;
+
+            @include mobile{
+                font-size: 30px;
+            }
+        }
+
+        .progress-bar{
+            height: 10px;
+            background-color: #a07855;
+        }
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        @include mobile{
+            padding: 20px;
+        }
+
+        @include tablet{
+            padding: 20px;
+        }
+
+        .wrapper{
+            max-width: 1024px;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+
+            @include mobile{
+                flex-direction: column;
+            }
+
+            .img-container{
+                flex: 1;
+                height: 50%;
+                opacity: 0.9;
+
+                @include mobile{
+                    width: 100%;
+                    max-height: 300px;
+                }
+
+                img{
+                    background: url(./kayvan.png);
+                    -webkit-background-size: cover;
+                    background-size: cover;
+                    background-position: center center;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50px;
+                    box-shadow: 0 0px 20px 20px rgba(222,193,155,1);
+
+                    @include mobile{
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            .text-container{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                @include mobile{
+                    transform: none !important;
+                    align-items: center;
+                    text-align: center;
+                    gap: 10px;
+                }
+
+                h2{
+                    font-size: 30px;
+                }
+
+                button{
+                    position: relative;
+                    background-color: #a07855;
+                    border: none;
+                    border-radius: 30px;
+                    padding: 10px;
+                    width: 150px;
+                    height: 50px;
+                    cursor: pointer;
+                    font-size: 13px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: 0.7px;
+
+                    &:hover{
+                        animation: shake 0.7s ease-in-out both;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@keyframes shake {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
