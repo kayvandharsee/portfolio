@@ -4,6 +4,7 @@
     height: calc(100vh - 100px);
     overflow: hidden;
     background: linear-gradient(180deg, #ffffe4, #ecd9ba);
+    position: relative;
 
     .container{
         height: calc(100vh - 200px);
