@@ -27,7 +27,7 @@ const Links = () => {
       {sections.map((section) => (
         // To href to each section
         <motion.a 
-        href={`#${section}`} 
+        href={`/portfolio#${section}`} 
         key={section} 
         variants={secVariants} 
         whileHover={{scale: 1.05}}
