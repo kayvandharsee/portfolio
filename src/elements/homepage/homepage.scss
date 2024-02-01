@@ -71,6 +71,7 @@
         right: 200px;
         justify-content: center;
         align-items: center;
+        z-index: 3;
 
         @include mobile{
          height: 50%;

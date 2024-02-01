@@ -23,6 +23,8 @@
         h1{
             color: black;
             font-size: 50px;
+            font-weight: 800;
+            letter-spacing: 2px;
 
             @include mobile{
                 font-size: 30px;
