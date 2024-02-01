@@ -29,13 +29,13 @@ const Navbar = () => {
                 whileInView = 'animate'
                 variants = {variants}>
                     <motion.a variants = {variants} href="https://www.instagram.com/kayvan.dharsee/" target="_blank">
-                        <img src="/Users/kayvan.dharsee/Coding/Portfolio/dist/insta-port.png" alt="links to instagram account" />
+                        <img src="insta-port.png" alt="links to instagram account" />
                     </motion.a>
                     <motion.a variants = {variants} href="https://github.com/kayvandharsee/" target="_blank">
-                        <img src="/github-port.png" alt="links to github account" />
+                        <img src="github-port.png" alt="links to github account" />
                     </motion.a>
                     <motion.a variants = {variants} href="https://www.linkedin.com/in/kayvan-dharsee-a41973297/" target="_blank">
-                        <img src="/linked-port.png" alt="links to linkedin account" />
+                        <img src="linked-port.png" alt="links to linkedin account" />
                     </motion.a>
                 </motion.div>
             </div>
