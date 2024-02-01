@@ -124,6 +124,10 @@
                     text-transform: uppercase;
                     letter-spacing: 0.7px;
 
+                    @include mobile{
+                        z-index: 5;
+                    }
+
                     &:hover{
                         animation: shake 0.7s ease-in-out both;
                     }
