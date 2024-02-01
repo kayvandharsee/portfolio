@@ -10,15 +10,15 @@ const App = () => {
   return (
     <div>
       <Cursor />
-      <section id="homepage">
+      <section id="Homepage">
         <Navbar />
         <Homepage />
       </section>
-      <section id="skills">
+      <section id="Portfolio">
         <Skills />
       </section>
       <Portfolio />
-      <section id="contact">
+      <section id="Contact">
         <Contact />
       </section>
     </div>
