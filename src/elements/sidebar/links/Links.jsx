@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-const sections = ['Homepage', 'Skills', 'Portfolio', 'Contact']
+const sections = ['homepage', 'skills', 'portfolio', 'contact']
 const variants = {
   open: {
     transition: {staggerChildren: 0.1}
@@ -27,7 +27,7 @@ const Links = () => {
       {sections.map((section) => (
         // To href to each section
         <motion.a 
-        href={`/portfolio#${section}`} 
+        href={`#${section}`} 
         key={section} 
         variants={secVariants} 
         whileHover={{scale: 1.05}}
