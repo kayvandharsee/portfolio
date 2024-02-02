@@ -66,7 +66,7 @@ const Homepage = () => {
           </motion.h2>
         </motion.div>
         <motion.div className="sliding-text" variants={sliderVariants} initial='initial' animate='animate'>
-          &nbsp;&nbsp;I CODE, I LIFT, I COOK&nbsp;&nbsp;
+          I CODE, I LIFT, I COOK
         </motion.div>
         <motion.div className='image' variants={blobVariants} initial='initial' whileInView='animate'>
             <div className='blob'></div>

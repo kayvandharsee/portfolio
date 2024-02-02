@@ -11,7 +11,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        overflow: hidden;
+        gap: 40px;
+        // overflow: hidden;
 
         @include mobile{
             flex-direction: column;
@@ -66,7 +67,6 @@
                 font-size: 50px;
                 letter-spacing: 5px;
                 color: #a07855;
-                width: 50%;
                 line-height: 70px;
                 font-weight: 800;
 
@@ -83,7 +83,6 @@
         }
 
         .image{
-            position: relative;
 
             @include mobile{
                 display: none;
@@ -94,8 +93,8 @@
                 -webkit-background-size: cover;
                 background-size: cover;
                 background-position: center center;
-                height: 450px;
-                width: 450px;
+                height: 400px;
+                width: 400px;
                 box-shadow: 0 0px 20px 20px rgba(222,193,155,1);
                 animation: blob 5s ease-in-out infinite;
                 transition: all 1s ease-in-out;
